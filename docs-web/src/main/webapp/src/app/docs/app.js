@@ -429,18 +429,12 @@ angular.module('docs',
       prefix: 'locale/',
       suffix: '.json?@build.date@'
     })
-    .registerAvailableLanguageKeys(['en', 'es', 'fr', 'de', 'el', 'ru', 'it', 'pl', 'zh_CN', 'zh_TW'], {
+    .registerAvailableLanguageKeys(['en', 'vie'], {
       'en_*': 'en',
-      'es_*': 'es',
-      'fr_*': 'fr',
-      'de_*': 'de',
-	    'el_*': 'el',
-      'ru_*': 'ru',
-      'it_*': 'it',
-	    'pl_*': 'pl',
+      'vie_*': 'vie',
       '*': 'en'
     })
-    .fallbackLanguage('en');
+    .fallbackLanguage('vie');
 
   if (!_.isUndefined(localStorage.overrideLang)) {
     // Set the current language if an override is saved in local storage
@@ -449,7 +443,7 @@ angular.module('docs',
     // Or else determine the language based on the user's browser
     $translateProvider.determinePreferredLanguage();
     if (!$translateProvider.use()) {
-      $translateProvider.use('en');
+      $translateProvider.use('vie');
     }
   }
 
@@ -518,30 +512,7 @@ angular.module('docs',
   // Languages
   $rootScope.acceptedLanguages = [
     { key: 'eng', label: 'English' },
-    { key: 'fra', label: 'Français' },
-    { key: 'ita', label: 'Italiano' },
-    { key: 'deu', label: 'Deutsch' },
-    { key: 'spa', label: 'Español' },
-    { key: 'por', label: 'Português' },
-    { key: 'pol', label: 'Polski' },
-    { key: 'rus', label: 'русский' },
-    { key: 'ukr', label: 'українська' },
-    { key: 'ara', label: 'العربية' },
-    { key: 'hin', label: 'हिन्दी' },
-    { key: 'chi_sim', label: '简体中文' },
-    { key: 'chi_tra', label: '繁体中文' },
-    { key: 'jpn', label: '日本語' },
-    { key: 'tha', label: 'ภาษาไทย' },
-    { key: 'kor', label: '한국어' },
-    { key: 'nld', label: 'Nederlands' },
-    { key: 'tur', label: 'Türkçe' },
-    { key: 'heb', label: 'עברית' },
-    { key: 'hun', label: 'Magyar' },
-    { key: 'fin', label: 'Suomi' },
-    { key: 'swe', label: 'Svenska' },
-    { key: 'lav', label: 'Latviešu' },
-    { key: 'dan', label: 'Dansk' },
-    { key: 'nor', label: 'Norsk' }
+    { key: 'vie', label: 'Vietnamese' }
   ];
 })
 /**
