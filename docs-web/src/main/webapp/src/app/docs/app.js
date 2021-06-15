@@ -434,7 +434,7 @@ angular.module('docs',
       'vie_*': 'vie',
       '*': 'en'
     })
-    .fallbackLanguage('vie');
+    .fallbackLanguage('en');
 
   if (!_.isUndefined(localStorage.overrideLang)) {
     // Set the current language if an override is saved in local storage
@@ -443,7 +443,7 @@ angular.module('docs',
     // Or else determine the language based on the user's browser
     $translateProvider.determinePreferredLanguage();
     if (!$translateProvider.use()) {
-      $translateProvider.use('vie');
+      $translateProvider.use('en');
     }
   }
 
