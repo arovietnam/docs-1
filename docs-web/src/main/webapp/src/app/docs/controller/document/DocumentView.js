@@ -3,8 +3,13 @@
 /**
  * Document view controller.
  */
-//angular.module('docs').controller('DocumentView', function ($scope, $rootScope, $state, $stateParams, $location, $dialog, $uibModal, Restangular, $translate) {
 angular.module('docs').controller('DocumentView', function ($scope, $rootScope, $state, $stateParams, $location, $dialog, $uibModal, Restangular, $translate) {
+  // Load document data from server
+  Restangular.one('document', $stateParams.id).get().then(function (data) {
+    $scope.document = data;
+  }, function (response) {
+    $scope.error = response;
+  });
 
   /**
    * Delete a document.
