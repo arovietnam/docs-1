@@ -227,59 +227,59 @@
       "message_4": "Nếu người dùng hoặc nhóm có quyền đọc đối với một nhãn thì cũng có quyền đọc đối với các tài liệu có gán nhãn đó.",
       "message_5": "Ví dụ, gán một tài liệu với nhãn <span class=\"label label-info\">MyCompany</span> và thêm phân quyền <strong>Chỉ đọc</strong> cho một nhóm <span class=\"btn btn-default\">employees</span>"
     "edit": {
-      "delete_tag_title": "Delete tag",
-      "delete_tag_message": "Do you really want to delete this tag?",
-      "name": "Name",
-      "color": "Color",
-      "parent": "Parent",
-      "info": "Permissions on this tag will also be applied to documents tagged <span class=\"label label-info\" ng-style=\"{ 'background': color }\">{{ name }}</span>",
+      "delete_tag_title": "Xóa nhãn",
+      "delete_tag_message": "Bạn có muốn xóa nhãn này?",
+      "name": "Tên",
+      "color": "Màu sắc",
+      "parent": "Cấp cha",
+      "info": "Quyền trên nhãn này cũng sẽ được áp dụng cho các tài liệu được gắn nhãn <span class=\"label label-info\" ng-style=\"{ 'background': color }\">{{ name }}</span>",
       "circular_reference_title": "Circular reference",
-      "circular_reference_message": "The hierarchy of parent tags makes a loop, please choose another parent."
+      "circular_reference_message": "Hệ thống phân cấp của các nhãn "Cha" tạo thành vòng lặp, vui lòng chọn cấp "Cha" khác."
     }
   },
   "group": {
     "profile": {
-      "members": "Members",
-      "no_members": "No member",
-      "related_links": "Related links",
-      "edit_group": "Edit {{ name }} group"
+      "members": "Thành viên",
+      "no_members": "Không có thành viên",
+      "related_links": "Liên kết liên quan",
+      "edit_group": "Sửa nhóm {{ name }}"
     }
   },
   "user": {
     "profile": {
-      "groups": "Groups",
-      "quota_used": "Quota used",
-      "percent_used": "{{ percent | number: 0 }}% Used",
-      "related_links": "Related links",
-      "document_created": "Documents created by {{ username }}",
-      "edit_user": "Edit {{ username }} user"
+      "groups": "Các nhóm",
+      "quota_used": "Dung lượng đã dùng",
+      "percent_used": "Đã dùng {{ percent | number: 0 }}%",
+      "related_links": "Liên kết liên quan",
+      "document_created": "Tài liệu được tạo bởi {{ username }}",
+      "edit_user": "Sửa người dùng {{ username }}"
     }
   },
   "usergroup": {
-    "search_groups": "Search in groups",
-    "search_users": "Search in users",
-    "you": "It's you!",
+    "search_groups": "Tìm kiếm trong các nhóm",
+    "search_users": "Tìm kiếm trong người dùng",
+    "you": "Chính là bạn!",
     "default": {
-      "title": "Users & Groups",
-      "message": "Here you can view informations about users and groups."
+      "title": "Người dùng & Nhóm",
+      "message": "Bạn có thể xem các thông tin về người dùng & nhóm ở đây."
     }
   },
   "settings": {
-    "menu_personal_settings": "Personal settings",
-    "menu_user_account": "User account",
-    "menu_two_factor_auth": "Two-factor authentication",
-    "menu_opened_sessions": "Opened sessions",
-    "menu_file_importer": "Bulk file importer",
-    "menu_general_settings": "General settings",
-    "menu_workflow": "Workflow",
-    "menu_users": "Users",
-    "menu_groups": "Groups",
-    "menu_vocabularies": "Vocabularies",
-    "menu_configuration": "Configuration",
-    "menu_inbox": "Inbox scanning",
+    "menu_personal_settings": "Cài đặt cá nhân",
+    "menu_user_account": "Tài khoản người dùng",
+    "menu_two_factor_auth": "Xác thực 2 bước",
+    "menu_opened_sessions": "Các phiên đang mở",
+    "menu_file_importer": "Trình nhập tập tin",
+    "menu_general_settings": "Thiết lập chung",
+    "menu_workflow": "Quy trình",
+    "menu_users": "Người dùng",
+    "menu_groups": "Nhóm",
+    "menu_vocabularies": "Từ vựng",
+    "menu_configuration": "Cấu hình",
+    "menu_inbox": "Quét hòm thư",
     "menu_ldap": "LDAP authentication",
-    "menu_metadata": "Custom metadata",
-    "menu_monitoring": "Monitoring",
+    "menu_metadata": "Tùy chỉnh siêu dữ liệu",
+    "menu_monitoring": "Giám sát",
     "ldap": {
       "title": "LDAP authentication",
       "enabled": "Enable LDAP authentication",
@@ -294,58 +294,58 @@
       "saved": "LDAP configuration saved successfully"
     },
     "user": {
-      "title": "Users management",
-      "add_user": "Add a user",
-      "username": "Username",
-      "create_date": "Create date",
-      "totp_enabled": "Two-factor authentication enabled for this account",
+      "title": "Quản lý người dùng",
+      "add_user": "Thêm người dùng",
+      "username": "Tên tài khoản",
+      "create_date": "Tạo ngày",
+      "totp_enabled": "Xác thực 2 bước đã được bật cho tài khoản này",
       "edit": {
-        "delete_user_title": "Delete user",
-        "delete_user_message": "Do you really want to delete this user? All associated documents, files and tags will be deleted",
-        "user_used_title": "User in use",
-        "user_used_message": "This user is used in the workflow \"{{ name }}\"",
-        "edit_user_failed_title": "User already exists",
-        "edit_user_failed_message": "This username is already taken by another user",
-        "edit_user_title": "Edit \"{{ username }}\"",
-        "add_user_title": "Add a user",
-        "username": "Username",
+        "delete_user_title": "Xóa người dùng",
+        "delete_user_message": "Bạn có muốn xóa người dùng này? Tất cả tài liệu, tập tin và các nhãn liên kết sẽ bị xóa",
+        "user_used_title": "Người dùng đang sử dụng",
+        "user_used_message": "Người dùng này được sử dụng trong quy trình \"{{ name }}\"",
+        "edit_user_failed_title": "Người dùng đã tồn tại",
+        "edit_user_failed_message": "Tên tài khoản này đã có trên hệ thống",
+        "edit_user_title": "Sửa \"{{ username }}\"",
+        "add_user_title": "Thêm người dùng",
+        "username": "Tài khoản",
         "email": "E-mail",
-        "groups": "Groups",
-        "storage_quota": "Storage quota",
-        "storage_quota_placeholder": "Storage quota (in MB)",
-        "password": "Password",
-        "password_confirm": "Password (confirm)",
-        "disabled": "Disabled user",
-        "password_reset_btn": "Send a password reset email to this user",
-        "password_lost_sent_title": "Password reset email sent",
-        "password_lost_sent_message": "A password reset email has been sent to <strong>{{ username }}</strong>",
+        "groups": "Nhóm",
+        "storage_quota": "Giới hạn lưu trữ",
+        "storage_quota_placeholder": "Giới hạn lưu trữ (tính theo MB)",
+        "password": "Mật khẩu",
+        "password_confirm": "Mật khẩu (xác nhận lại)",
+        "disabled": "Vô hiệu hóa người dùng",
+        "password_reset_btn": "Gửi mật khẩu mới cho người dùng này",
+        "password_lost_sent_title": "Đã gửi thư chứa mật khẩu mới",
+        "password_lost_sent_message": "Mật khẩu mới đã được gửi cho <strong>{{ username }}</strong>",
         "disable_totp_btn": "Disable two-factor authentification for this user",
         "disable_totp_title": "Disable two-factor authentication",
         "disable_totp_message": "Are you sure you want to disable two-factor authentication for this user?"
       }
     },
     "workflow": {
-      "title": "Workflow configuration",
-      "add_workflow": "Add a workflow",
-      "name": "Name",
-      "create_date": "Create date",
+      "title": "Cấu hình quy trình làm việc",
+      "add_workflow": "Thêm quy trình",
+      "name": "Tên",
+      "create_date": "Tạo ngày",
       "edit": {
-        "delete_workflow_title": "Delete workflow",
-        "delete_workflow_message": "Do you really want to delete this workflow? Currently running workflows will not be deleted",
-        "edit_workflow_title": "Edit \"{{ name }}\"",
-        "add_workflow_title": "Add a workflow",
-        "name": "Name",
-        "name_placeholder": "Step name or description",
-        "drag_help": "Drag and drop to reorder the step",
-        "type": "Step type",
-        "type_approve": "Approve",
-        "type_validate": "Validate",
-        "target": "Assigned to",
-        "target_help": "<strong>Approve:</strong> Accept or reject the review<br/><strong>Validate:</strong> Review and continue the workflow",
-        "add_step": "Add a workflow step",
-        "actions": "What happens after?",
-        "remove_action": "Remove action",
-        "acl_info": "Only users and groups defined here will be able to start this workflow on a document"
+        "delete_workflow_title": "Xóa quy trình",
+        "delete_workflow_message": "Bạn có muốn xóa quy trình này? Quy trình đang hoạt động sẽ không thể xóa",
+        "edit_workflow_title": "Sửa \"{{ name }}\"",
+        "add_workflow_title": "Thêm quy trình",
+        "name": "Tên",
+        "name_placeholder": "Tên của bước hoặc diễn giải",
+        "drag_help": "Kéo và thả để sắp xếp lại các bước",
+        "type": "Kiểu bước",
+        "type_approve": "Phê duyệt",
+        "type_validate": "Xác thực",
+        "target": "Giao cho",
+        "target_help": "<strong>Phê duyệt:</strong> Chấp nhận hoặc từ chối đánh giá <br/><strong>Xác thực:</strong> Đánh giá và tiếp tục quy trình",
+        "add_step": "Thêm một bước quy trình",
+        "actions": "Hành động tiếp theo?",
+        "remove_action": "Xóa hành động",
+        "acl_info": "Chỉ người dùng và nhóm được khai báo ở đây mới được phép khởi động Quy trình cho tài liệu"
       }
     },
     "security": {
@@ -371,47 +371,47 @@
       "test_code_fail": "This code is not valid, please double check that your phone is properly configured or disable Two-factor authentication"
     },
     "group": {
-      "title": "Groups management",
-      "add_group": "Add a group",
-      "name": "Name",
+      "title": "Quản lý nhóm",
+      "add_group": "Tạo nhóm",
+      "name": "Tên",
       "edit": {
-        "delete_group_title": "Delete group",
-        "delete_group_message": "Do you really want to delete this group?",
-        "edit_group_failed_title": "Group already exists",
-        "edit_group_failed_message": "This group name is already taken by another group",
-        "group_used_title": "Group in use",
+        "delete_group_title": "Xóa nhóm",
+        "delete_group_message": "Bạn muốn xóa nhóm này?",
+        "edit_group_failed_title": "Nhóm này đã tồn tại",
+        "edit_group_failed_message": "Tên nhóm này đã có trên hệ thống",
+        "group_used_title": "Nhóm đang được sử dụng",
         "group_used_message": "This group is used in the workflow \"{{ name }}\"",
-        "edit_group_title": "Edit \"{{ name }}\"",
-        "add_group_title": "Add a group",
-        "name": "Name",
-        "parent_group": "Parent group",
-        "search_group": "Search a group",
-        "members": "Members",
-        "new_member": "New member",
-        "search_user": "Search a user"
+        "edit_group_title": "Sửa nhóm \"{{ name }}\"",
+        "add_group_title": "Tạo nhóm",
+        "name": "Tên",
+        "parent_group": "Nhóm cha",
+        "search_group": "Tìm nhóm",
+        "members": "Thành viên",
+        "new_member": "Thêm thành viên",
+        "search_user": "Tìm kiếm thành viên"
       }
     },
     "account": {
-      "title": "User account",
-      "password": "Password",
-      "password_confirm": "Password (confirm)",
-      "updated": "Account successfully updated"
+      "title": "Tài khoản người dùng",
+      "password": "Mật khẩu",
+      "password_confirm": "Mật khẩu (xác nhận)",
+      "updated": "Tài khoản được cập nhật thành công"
     },
     "config": {
-      "title_guest_access": "Guest access",
+      "title_guest_access": "Tài khoản khách",
       "message_guest_access": "Guest access is a mode where anyone can access {{ appName }} without password.<br/>Like a normal user, the guest user can only access its documents and those accessible through permissions.<br/>",
-      "enable_guest_access": "Enable guest access",
-      "disable_guest_access": "Disable guest access",
-      "title_theme": "Theme customization",
-      "title_general": "General configuration",
-      "default_language": "Default language for new documents",
-      "application_name": "Application name",
-      "main_color": "Main color",
-      "custom_css": "Custom CSS",
+      "enable_guest_access": "Cho phép tài khoản khách",
+      "disable_guest_access": "Không cho phép tài khoản khách",
+      "title_theme": "Tùy chỉnh giao diện",
+      "title_general": "Cấu hình chung",
+      "default_language": "Ngôn ngữ mặc định cho tài liệu",
+      "application_name": "Tên ứng dụng",
+      "main_color": "Màu chính",
+      "custom_css": "Tùy chỉnh CSS",
       "custom_css_placeholder": "Custom CSS to add after the main stylesheet",
       "logo": "Logo (squared size)",
-      "background_image": "Background image",
-      "uploading_image": "Uploading the image...",
+      "background_image": "Ảnh nền",
+      "uploading_image": "Đang tải ảnh lên...",
       "title_smtp": "Email configuration",
       "smtp_hostname": "SMTP hostname",
       "smtp_port": "SMTP port",
@@ -427,10 +427,10 @@
       "webhook_add": "Add a webhook"
     },
     "metadata": {
-      "title": "Custom metadata configuration",
-      "message": "Here you can add custom metadata to your documents like an internal identifier or an expiration date. Please note that the metadata type cannot be changed after creation.",
-      "name": "Metadata name",
-      "type": "Metadata type"
+      "title": "Cấu hình metadata",
+      "message": "Bạn có thể thêm tùy chỉnh metadata cho tài liệu của bạn như định danh nội bộ hoặc ngày hết hạn. Lưu ý, kiểu metadata không thể thay đổi sau khi tạo.",
+      "name": "Tên Metadata",
+      "type": "Kiểu Metadata"
     },
     "inbox": {
       "title": "Inbox scanning",
@@ -516,36 +516,36 @@
   },
   "directive": {
     "acledit": {
-      "acl_target": "For",
-      "acl_permission": "Permission",
-      "add_permission": "Add a permission",
-      "search_user_group": "Search a user or group"
+      "acl_target": "Cho",
+      "acl_permission": "Quyền hạn",
+      "add_permission": "Thêm một quyền hạn",
+      "search_user_group": "Tìm kiếm người dùng hoặc nhóm"
     },
     "auditlog": {
-      "log_created": "created",
-      "log_updated": "updated",
-      "log_deleted": "deleted",
+      "log_created": "đã tạo",
+      "log_updated": "đã cập nhật",
+      "log_deleted": "đã xóa",
       "Acl": "ACL",
-      "Comment": "Comment",
-      "Document": "Document",
-      "File": "File",
-      "Group": "Group",
-      "Route": "Workflow",
-      "RouteModel": "Workflow model",
-      "Tag": "Tag",
-      "User": "User",
+      "Comment": "Bình luận",
+      "Document": "Tài liệu",
+      "File": "Tập tin",
+      "Group": "Nhóm",
+      "Route": "Quy trình",
+      "RouteModel": "Mô hình quy trình",
+      "Tag": "Nhãn",
+      "User": "Người dùng",
       "Webhook": "Webhook"
     },
     "selectrelation": {
-      "typeahead": "Type a document title"
+      "typeahead": "Nhập tiêu đề tài liệu"
     },
     "selecttag": {
-      "typeahead": "Type a tag"
+      "typeahead": "Nhập tên nhãn"
     },
     "datepicker": {
-      "current": "Today",
-      "clear": "Clear",
-      "close": "Done"
+      "current": "Hôm nay",
+      "clear": "Xóa",
+      "close": "Chọn"
     }
   },
   "filter": {
@@ -555,42 +555,42 @@
     }
   },
   "acl": {
-    "READ": "Can read",
-    "READWRITE": "Can write",
-    "WRITE": "Can write",
-    "USER": "User",
-    "GROUP": "Group",
-    "SHARE": "Shared"
+    "READ": "Đọc",
+    "READWRITE": "Ghi",
+    "WRITE": "Ghi",
+    "USER": "Người dùng",
+    "GROUP": "Nhóm",
+    "SHARE": "Được chia sẻ"
   },
   "workflow_type": {
-    "VALIDATE": "Validation",
-    "APPROVE": "Approbation"
+    "VALIDATE": "Thẩm định",
+    "APPROVE": "Phê duyệt"
   },
   "workflow_transition": {
-    "APPROVED": "Approved",
-    "REJECTED": "Rejected",
-    "VALIDATED": "Validated"
+    "APPROVED": "Đã duyệt",
+    "REJECTED": "Từ chối",
+    "VALIDATED": "Đã thẩm định"
   },
   "validation": {
-    "required": "Required",
-    "too_short": "Too short",
-    "too_long": "Too long",
-    "email": "Must be a valid e-mail",
-    "password_confirm": "Password and password confirmation must match",
-    "number": "Number required",
-    "no_space": "Spaces and colons are not allowed",
-    "alphanumeric": "Only letters and numbers are allowed"
+    "required": "Bắt buộc",
+    "too_short": "Quá ngắn",
+    "too_long": "Quá dài",
+    "email": "Phải là địa chỉ thư hợp lệ",
+    "password_confirm": "Mật khẩu và mật khẩu nhập lại cần giống nhau",
+    "number": "Chỉ nhập số",
+    "no_space": "Không chấp nhận dấu cách và hai chấm",
+    "alphanumeric": "Chỉ cho phép ký tự và số"
   },
   "action_type": {
-    "ADD_TAG": "Add a tag",
-    "REMOVE_TAG": "Remove a tag",
-    "PROCESS_FILES": "Process files"
+    "ADD_TAG": "Thêm một nhãn",
+    "REMOVE_TAG": "Xóa một nhãn",
+    "PROCESS_FILES": "Xử lý tập tin"
   },
   "pagination": {
-    "previous": "Previous",
-    "next": "Next",
-    "first": "First",
-    "last": "Last"
+    "previous": "Trước",
+    "next": "Sau",
+    "first": "Đầu",
+    "last": "Cuối"
   },
   "onboarding": {
     "step1": {
@@ -618,20 +618,20 @@
   "no": "No",
   "ok": "OK",
   "cancel": "Cancel",
-  "share": "Share",
-  "unshare": "Unshare",
-  "close": "Close",
-  "add": "Add",
-  "open": "Open",
-  "see": "See",
-  "save": "Save",
-  "export": "Export",
-  "edit": "Edit",
-  "delete": "Delete",
-  "rename": "Rename",
-  "download": "Download",
-  "loading": "Loading...",
-  "send": "Send",
+  "share": "Chia sẻ",
+  "unshare": "Bỏ chia sẻ",
+  "close": "Đóng",
+  "add": "Thêm",
+  "open": "Mở",
+  "see": "Xem",
+  "save": "Lưu",
+  "export": "Xuất",
+  "edit": "Sửa",
+  "delete": "Xóa",
+  "rename": "Đổi tên",
+  "download": "Tải về",
+  "loading": "Đang tải...",
+  "send": "Gửi",
   "enabled": "Enabled",
   "disabled": "Disabled"
 }
