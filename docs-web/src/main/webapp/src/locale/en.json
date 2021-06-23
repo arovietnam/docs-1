@@ -226,7 +226,9 @@
       "message_3": "Bấm vào nút <span class=\"fas fa-pencil-alt\"></span>, bạn có thể chỉnh sửa quyền trên nhãn.",
       "message_4": "Nếu người dùng hoặc nhóm có quyền đọc đối với một nhãn thì cũng có quyền đọc đối với các tài liệu có gán nhãn đó.",
       "message_5": "Ví dụ, gán một tài liệu với nhãn <span class=\"label label-info\">MyCompany</span> và thêm phân quyền <strong>Chỉ đọc</strong> cho một nhóm <span class=\"btn btn-default\">employees</span>"
-    "edit": {
+    }
+  }, 
+  "edit": {
       "delete_tag_title": "Xóa nhãn",
       "delete_tag_message": "Bạn có muốn xóa nhãn này?",
       "name": "Tên",
@@ -234,7 +236,7 @@
       "parent": "Cấp cha",
       "info": "Quyền trên nhãn này cũng sẽ được áp dụng cho các tài liệu được gắn nhãn <span class=\"label label-info\" ng-style=\"{ 'background': color }\">{{ name }}</span>",
       "circular_reference_title": "Circular reference",
-      "circular_reference_message": "Hệ thống phân cấp của các nhãn \"Cha\" tạo thành vòng lặp, vui lòng chọn cấp \"Cha\" khác."
+      "circular_reference_message": "Hệ thống phân cấp của các nhãn cha tạo thành vòng lặp, vui lòng chọn nhãn cha khác."
     }
   },
   "group": {
